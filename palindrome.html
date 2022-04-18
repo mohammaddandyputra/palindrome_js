@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title></title>
+</head>
+
+<body>
+  <script>
+
+    function Palindrom(kata) {
+      
+      for(let i = 0; i < kata.length; i++){
+        // console.log(i + " : " + (kata.length - i - 1));
+        let kataAwal = i;
+        let kataAkhir = kata.length - i - 1;
+        
+        if(kata.charAt(kataAwal) !== kata.charAt(kataAkhir)){
+          return false;
+        }
+      }
+      
+      return true;
+    }
+
+    console.log(Palindrom("katak"))
+
+  </script>
+</body>
+
+</html>
